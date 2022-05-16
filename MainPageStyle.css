@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -9,31 +8,36 @@
     margin: 5px auto;
     height: auto;
 }
+
 header {
-   width: 1035px; 
-   height: 80px;
-   background-color: #FFD700;
+    width: 1035px;
+    height: 80px;
+    background-color: #FFD700;
 }
-body{
+
+body {
     background-color: #333;
 }
+
 #block-content {
     width: 1035px;
     height: auto;
     min-height: 500px;
 }
+
 .logo {
     width: 200px;
     float: left;
     height: 80px;
 }
+
 .logo a {
     display: block;
     margin-left: 15px;
     margin-top: 10px;
     font-family: "Exo2-Bold", sans-serif;
     font-size: 28px;
-    color:  #b2aeb2;
+    color: #b2aeb2;
     text-decoration: none;
     cursor: pointer;
 }
@@ -44,49 +48,57 @@ body{
     height: 80px;
     float: left;
 }
+
 .top-menu ul li {
     list-style: none;
     float: left;
     text-align: center;
 }
+
 .top-menu ul li a {
     display: block;
     width: 171px;
     text-decoration: none;
-    font-family:  "Exo2-Medium", sans-serif;
+    font-family: "Exo2-Medium", sans-serif;
     font-size: 17px;
     color: black;
     height: 50px;
     padding-top: 30px;
     cursor: pointer;
 }
+
 .top-menu ul li a:hover {
     background: #00ADE4;
 }
+
 .block-top-auth {
     width: 100px;
     float: left;
     margin-left: 40px;
     height: 80px;
 }
+
 .block-top-auth p {
     margin-top: 12px;
     text-align: center;
     margin-bottom: 8px;
-    
+
 }
+
 .block-top-auth a {
     text-decoration: none;
     color: black;
-    font-family:  "Exo2-Medium", sans-serif;
+    font-family: "Exo2-Medium", sans-serif;
     font-size: 15px;
     text-decoration: underline;
     cursor: pointer;
 }
+
 .block-top-auth a:hover {
     color: #00ADE4;
 }
-.form{
+
+.form {
     max-width: 550px;
     margin: 0px auto;
     color: #fff;
@@ -94,36 +106,31 @@ body{
 
 }
 
-.form_title{
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0px 0px 30px 0px;
+
+.form_item {
+    margin: 0px 0px 20px 0px;
 }
-.form_item{
-margin: 0px 0px 20px 0px;
-}
-.form_lable{
+
+.form_lable {
     font-size: 18px;
     display: block;
     margin: 0px 0px 10px 0px;
 
 }
-.form_input{
-    height: 50px;
-    padding: 0px 20px;
-    border-radius: 5px;
+
+.form_input {
     width: 100%;
+    height: 50px;
+    border-radius: 5px;
     font-size: 18px;
 }
-textarea{
-    width: 592px;
+
+.text1 {
+    width: 100%;
     height: 150px;
+    border-radius: 5px;
 }
-textarea.form_input{
-    min-height: 120px;
-    resize: vertical;
-    padding: 20px;
-}
+
 .form_button {
     width: 100%;
     padding: 10px;
@@ -131,5 +138,193 @@ textarea.form_input{
     color: black;
     background: #5F9EA0;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
+}
+
+.blockPhoto img {
+    width: 200px;
+    height: 300px;
+}
+
+
+.zagalBlock {
+    background: white;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.block1 {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    background: white;
+    width: 990px;
+    height: 320px;
+    /*margin: 20px auto; /* Зверху | Праворуч Знизу Ліворуч */
+    */
+}
+
+.blockPhoto {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 200px;
+    height: 300px;
+    float: left;
+}
+
+.blockText {
+    max-height: 250px;
+    width: 730px;
+    height: 250px;
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+}
+
+.rating {
+    margin-right: 20px;
+    float: right;
+    height: 50px;
+    position: relative;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.rating::before {
+    content: "★★★★★";
+    display: block;
+}
+
+.rating_items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.rating_item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+
+}
+
+.rating_label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #333;
+}
+
+.rating_label::before {
+    content: "★";
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.rating_item:checked,
+.rating_item:checked~.rating_label {
+    color: #ffd300;
+}
+
+.rating_label:hover,
+.rating_label:hover~.rating_label,
+.rating_label:checked~.rating_label:hover {
+    color: #ffef9f;
+}
+
+.d1 {
+    width: 1000px;
+    height: 34px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.d2 {
+    width: 300px;
+    height: 20px;
+    float: right;
+}
+
+.search {
+    width: 300px;
+    position: relative;
+}
+
+.search input {
+    border: none;
+}
+
+.search .input {
+    width: 100%;
+    padding: 8px 37px 9px 15px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background: #EEE;
+    font: 13px Tahoma, Arial, sans-serif;
+    color: #555;
+    outline: none;
+}
+
+.search .input:focus {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+    background: #E8E8E8;
+    color: #333;
+}
+
+.search .submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 100%;
+    cursor: pointer;
+    background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+    opacity: 0.5;
+}
+
+.search .submit:hover {
+    opacity: 0.8;
+}
+
+.filmRating{
+padding-top: 20px;
+    margin-left: 5px;
+    margin: 0 auto;
+    background: white;
+    width: 700px;
+    height: 320px;
+}
+
+.photoRating{
+background: red;
+width: 187px;
+height: 100px;
+float: left;
+margin-right: 50px;
+}
+.nameFilm{
+background: blue;
+width: 300px;
+height: 100px;
+float: left;
+}
+
+.mark{
+background: yellow;
+width: 100px;
+height: 100px;
+float: right;
 }

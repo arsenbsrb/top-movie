@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="MainPageStyle.css">
@@ -13,7 +13,7 @@
        <div class="top-menu">
          <ul>
              <li><a href="#">Фільми</a></li>
-             <li><a href="#">Рейтинг</a></li>
+             <li><a href="Rating.html">Рейтинг</a></li>
              <li><a href="#">Про авторів</a></li>
              <li><a href="Feedback.html">Зворотній зв'язок</a></li>
          </ul>  
@@ -25,8 +25,39 @@
      </header>
     </div>   
     <body>
-    	
-    </body>
-    
+      <div class="d1">
+        <div class="d2">
+          <form action="" method="post" class="search">
+  <input type="search" name="" placeholder="Пошук" class="input" />
+  <input type="submit" name="" value="" class="submit" />
+</form>
+        </div>
+      </div>
 
+      <div class="zagalBlock">
+       <div class="block1">
+         <div class="blockPhoto"><img src="titanik.jpg">
+         </div>
+         <div class="blockText"><h1>Титанік</h1>
+          <p>Жанр: Драми, Мелодрами, Закордонні</p>
+          <p>Легендарный фильм-катастрофа «Титаник», вышедший на экраны в 1997 году, является творением гениального голливудского режиссера Джеймса Кэмерона. Картина рассказывает о недолгой, но очень сильной любви двух молодых людей из разных слоев населения, которых судьба свела на злополучном лайнере. 14 апреля 1912 года самый большой пароход в мире, на борту которого находилось более двух тысяч человек, отправился из британского порта в свое первое и последнее плавание. Выиграв в карты два билета на Титаник, на судно отправляются молодой художник Джек Доусон вместе со своим другом. Прекрасную девушку Роуз родители заставляют выйти за нелюбимого, но очень состоятельного кавалера, ведь этот брак поможет поправить тяжелое финансовое положение семьи. В отчаянии Роуз решает покончить с собой, и пытается спрыгнуть с верхней палубы корабля прямо в открытый океан. Однако ее спасает находившийся в это время там Джек Доусон. Между ними вспыхивают очень сильные чувства, которыми они так и не смогут насладиться сполна.</p>
+         </div>
+          <div class="rating">
+               <div class="rating_items">
+                    <input id="rating_5" type="radio" class="rating_item" name="rating" value="5">
+                    <label for="rating_5" class="rating_label"></label>
+                    <input id="rating_4" type="radio" class="rating_item" name="rating" value="4">
+                    <label for="rating_4" class="rating_label"></label>
+                    <input id="rating_3" type="radio" class="rating_item" name="rating" value="3">
+                    <label for="rating_3" class="rating_label"></label>
+                    <input id="rating_2" type="radio" class="rating_item" name="rating" value="2">
+                    <label for="rating_2" class="rating_label"></label>
+                    <input id="rating_1" type="radio" class="rating_item" name="rating" value="1">
+                    <label for="rating_1" class="rating_label"></label>
+                </div>
+            </div>
+        </div> 
+        
+     </div>  
+    </body>
 </html>
