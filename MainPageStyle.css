@@ -20,10 +20,10 @@
 
 body {
     background: url("img/background.png") no-repeat center center fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    -background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -background-size: cover;
     height: 100%;
 }
 
@@ -85,7 +85,7 @@ body {
     color: #daa520;
 }
 
-.authorization a:link{
+.authorization a:link {
     text-decoration: none;
 }
 
@@ -156,7 +156,7 @@ body {
     transition: transform 250ms;
 }
 
-.block1:hover{
+.block1:hover {
     transform: translateY(-5px);
 }
 
@@ -251,8 +251,8 @@ body {
     float: right;
 }
 
-.filmRating{
-padding-top: 20px;
+.filmRating {
+    padding-top: 20px;
     margin-left: 5px;
     margin: 0 auto;
     background: white;
@@ -260,25 +260,26 @@ padding-top: 20px;
     height: 320px;
 }
 
-.photoRating{
-background: red;
-width: 187px;
-height: 100px;
-float: left;
-margin-right: 50px;
-}
-.nameFilm{
-background: blue;
-width: 300px;
-height: 100px;
-float: left;
+.photoRating {
+    background: red;
+    width: 187px;
+    height: 100px;
+    float: left;
+    margin-right: 50px;
 }
 
-.mark{
-background: yellow;
-width: 100px;
-height: 100px;
-float: right;
+.nameFilm {
+    background: blue;
+    width: 300px;
+    height: 100px;
+    float: left;
+}
+
+.mark {
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    float: right;
 }
 
 .wrapper {
@@ -293,27 +294,44 @@ float: right;
     height: 100px;
     line-height: 100px;
     text-align: center;
+    color: #d2d3d4;
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
+
+
 }
 
-.img-logo{
-    height:80px;
+/*.footer1 {
+    background-color: #212121;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}*/
+
+.img-logo {
+    height: 80px;
     width: 80px;
     line-height: 80px;
     float: left;
     transition: transform 250ms;
 }
 
-.img-logo:hover{
+.img-logo:hover {
     transform: translateY(10px);
 }
 
-.sorting{
+.sorting {
     height: 35px;
 }
 
-.more{
+.more {
     border-style: none;
     display: inline-block;
     font-size: 17px;
@@ -329,7 +347,7 @@ float: right;
     transition: transform 250ms;
 }
 
-.less{
+.less {
     border-style: none;
     display: inline-block;
     font-size: 17px;
@@ -344,10 +362,131 @@ float: right;
     border-radius: 0 20px 20px 0;
     transition: transform 250ms;
 }
-.more:hover{
+
+.more:hover {
     transform: translateX(-2px);
 }
 
-.less:hover{
+.less:hover {
     transform: translateX(2px);
+}
+
+.author {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.block0 {
+    width: 250px;
+    height: 350px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.block2 {
+    width: 250px;
+    height: 350px;
+    background: white;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    border-radius: 20px;
+}
+
+.block3 {
+    width: 420px;
+    height: 350px;
+    background: white;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.block4 {
+    width: 250px;
+    height: 350px;
+    background: white;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    border-radius: 20px;
+}
+
+.centerBlock {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.Info {
+    width: 190px;
+    height: 310px;
+    border-radius: 120px;
+    text-align: center;
+    border: 3px solid #e08c2b;
+    margin-left: 27px;
+    margin-top: 5px;
+}
+
+.FrontEndInfo-1 {
+
+    width: 190px;
+    height: 310px;
+    border-radius: 150px;
+    text-align: center;
+    border: 3px solid #e08c2b;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+.FrontEndInfo-2 {
+
+    width: 190px;
+    height: 310px;
+    border-radius: 150px;
+    text-align: center;
+    border: 3px solid #e08c2b;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.author img {
+    width: auto;
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+
+}
+
+.nameInfo {
+    font-family: "Monotype Corsiva";
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.emailInfo {
+    font-family: "Сomic Sans MS"cursive;
+    color: #2bcbe0;
+}
+
+.emailNam {
+    padding-bottom: 5px;
+}
+
+.telInfo {
+    font-family: Сomic Sans MS;
+    color: #2bcbe0;
 }
